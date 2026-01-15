@@ -156,6 +156,12 @@
   gap: var(--space-4);
 }
 
+/* 技术栈与能力矩阵小卡片：让文本离左右边框更远一点 */
+.skills-grid .card {
+  padding-left: calc(var(--space-5) + var(--space-2));
+  padding-right: calc(var(--space-5) + var(--space-2));
+}
+
 .skill-group-title {
   font-weight: 600;
   margin-bottom: 0.4rem;
