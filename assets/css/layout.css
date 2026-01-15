@@ -378,6 +378,12 @@
 }
 
 /* 栅格与卡片 */
+.section > .container > .card,
+.section > .container > .grid > .card,
+.section > .container > .grid > .code-shell {
+  margin-top: var(--space-6);
+}
+
 .grid {
   display: grid;
   gap: var(--space-6);
@@ -393,7 +399,7 @@
 
 .card {
   border-radius: var(--radius-lg);
-  padding: var(--space-5);
+  padding: calc(var(--space-5) + 4px);
   background: radial-gradient(circle at top, #111827, #020617);
   border: 1px solid rgba(148, 163, 184, 0.25);
   box-shadow: var(--shadow-md);

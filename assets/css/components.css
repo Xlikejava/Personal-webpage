@@ -366,6 +366,17 @@
   position: relative;
 }
 
+/* 代码区与时间轴卡片左右缩进少许，避免紧贴容器边缘 */
+#code-showcase .code-shell {
+  margin-left: var(--space-2);
+  margin-right: var(--space-2);
+}
+
+#timeline .card {
+  margin-left: var(--space-2);
+  margin-right: var(--space-2);
+}
+
 .code-header {
   display: flex;
   align-items: center;
