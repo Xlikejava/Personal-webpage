@@ -1,0 +1,41 @@
+{
+  "groups": [
+    {
+      "id": "backend",
+      "title": "后端核心",
+      "items": [
+        { "name": "PHP 7.4 / 8.0", "level": 95, "label": "精通" },
+        { "name": "Laravel / ThinkPHP", "level": 92, "label": "精通" },
+        { "name": "设计模式 / DDD", "level": 90, "label": "精通" }
+      ]
+    },
+    {
+      "id": "database",
+      "title": "数据库与缓存",
+      "items": [
+        { "name": "MySQL / PostgreSQL", "level": 93, "label": "精通" },
+        { "name": "Redis（缓存 / 分布式锁）", "level": 92, "label": "精通" },
+        { "name": "MongoDB", "level": 80, "label": "熟练" }
+      ]
+    },
+    {
+      "id": "cloud",
+      "title": "云与架构",
+      "items": [
+        { "name": "Docker / Kubernetes", "level": 85, "label": "熟练" },
+        { "name": "RESTful API / GraphQL", "level": 95, "label": "精通" },
+        { "name": "消息队列（RabbitMQ / Kafka）", "level": 82, "label": "熟练" }
+      ]
+    },
+    {
+      "id": "tooling",
+      "title": "工程化与工具",
+      "items": [
+        { "name": "Git / Git Flow", "level": 95, "label": "精通" },
+        { "name": "Linux / Shell", "level": 92, "label": "精通" },
+        { "name": "CI / CD", "level": 85, "label": "熟练" }
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,90 @@
+{
+  "projects": [
+    {
+      "id": "ecommerce-microservices",
+      "title": "电商微服务平台",
+      "shortDescription": "企业级电商系统，支撑日订单 100 万+，QPS 5000+，端到端延迟 < 100ms。",
+      "techStack": ["PHP", "Laravel", "MySQL", "Redis", "Docker", "Kafka"],
+      "completionDate": "2023-12",
+      "githubUrl": "",
+      "demoUrl": "",
+      "metrics": {
+        "日订单量": "100 万+",
+        "峰值 QPS": "5000+",
+        "响应时间": "< 100ms"
+      },
+      "category": ["后端", "微服务", "电商"]
+    },
+    {
+      "id": "realtime-analytics",
+      "title": "实时数据分析平台",
+      "shortDescription": "构建从采集、流式计算到多维分析的实时数据平台，日处理数据量 10TB+。",
+      "techStack": ["PHP", "Flink", "Elasticsearch"],
+      "completionDate": "2022-08",
+      "githubUrl": "",
+      "demoUrl": "",
+      "metrics": {
+        "数据量": "10TB/天",
+        "查询延迟": "< 1s"
+      },
+      "category": ["大数据", "实时计算"]
+    },
+    {
+      "id": "sso-auth",
+      "title": "统一认证授权系统",
+      "shortDescription": "基于 OAuth2.0 + JWT 的企业级统一认证中心，支持多租户与多因素认证。",
+      "techStack": ["PHP", "OAuth 2.0", "JWT", "Spring Security"],
+      "completionDate": "2021-11",
+      "githubUrl": "",
+      "demoUrl": "",
+      "metrics": {
+        "接入系统": "30+",
+        "可用性": "99.99%"
+      },
+      "category": ["安全", "认证授权"]
+    },
+    {
+      "id": "api-gateway",
+      "title": "API 网关与治理平台",
+      "shortDescription": "面向微服务的网关与治理平台，支持动态路由、熔断降级与限流。",
+      "techStack": ["PHP", "Go", "Redis", "Nginx"],
+      "completionDate": "2020-09",
+      "githubUrl": "",
+      "demoUrl": "",
+      "metrics": {
+        "日请求量": "10 亿+",
+        "平均延迟": "< 50ms"
+      },
+      "category": ["中间件", "架构"]
+    },
+    {
+      "id": "cms-refactor",
+      "title": "内容管理系统重构",
+      "shortDescription": "将老旧 CMS 从 PHP 5.6 升级至 8.0，并彻底重构架构与核心模块。",
+      "techStack": ["PHP 8.0", "重构", "性能优化"],
+      "completionDate": "2019-06",
+      "githubUrl": "",
+      "demoUrl": "",
+      "metrics": {
+        "性能提升": "300%",
+        "内存下降": "60%"
+      },
+      "category": ["重构", "性能"]
+    },
+    {
+      "id": "oss-contrib",
+      "title": "开源贡献项目",
+      "shortDescription": "持续为社区项目提交 PR，涉及框架扩展、性能优化与文档改进。",
+      "techStack": ["PHP", "Open Source"],
+      "completionDate": "持续中",
+      "githubUrl": "https://github.com/yourusername",
+      "demoUrl": "",
+      "metrics": {
+        "GitHub Star": "500+",
+        "被采用项目": "多家头部业务"
+      },
+      "category": ["开源", "社区"]
+    }
+  ]
+}
+
