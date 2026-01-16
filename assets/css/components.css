@@ -158,8 +158,7 @@
 
 /* 技术栈与能力矩阵小卡片：让文本离左右边框更远一点 */
 .skills-grid .card {
-  padding-left: calc(var(--space-5) + var(--space-4));
-  padding-right: calc(var(--space-5) + var(--space-4));
+  padding: calc(var(--space-5) + 4px) calc(var(--space-5) + var(--space-4)) !important;
 }
 
 .skill-group-title {
