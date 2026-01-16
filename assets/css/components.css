@@ -105,6 +105,7 @@
   gap: var(--space-4);
   flex-wrap: wrap;
   margin-top: var(--space-3);
+  align-items: flex-start; /* 防止子元素被拉伸 */
 }
 
 .metric-pill {
@@ -119,6 +120,8 @@
   );
   font-size: 0.78rem;
   color: #e0f2fe;
+  flex-shrink: 0; /* 防止被压缩 */
+  align-self: flex-start; /* 防止被拉伸 */
 }
 
 .metric-pill span:first-child {
@@ -595,6 +598,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start; /* 内容从顶部开始，不拉伸 */
 }
 
 /* 代码一瞥模块左侧卡片标题和副标题：确保不紧贴边框，有足够间距 */
@@ -610,14 +614,15 @@
   padding: 0;
 }
 
-/* 代码一瞥模块指标行：确保与副标题有足够间距 */
+/* 代码一瞥模块指标行：确保与副标题有足够间距，但不被拉伸 */
 #code-showcase .metric-row {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
   padding: 0;
-  flex: 1; /* 让指标行占据剩余空间，确保卡片高度 */
+  align-items: flex-start; /* 防止子元素被拉伸 */
+  align-self: flex-start; /* 防止自身被拉伸 */
 }
 
 /* 代码一瞥模块右侧代码编辑器：统一高度和内边距 */
