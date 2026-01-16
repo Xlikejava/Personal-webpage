@@ -480,13 +480,97 @@
   position: relative;
 }
 
-/* 代码区与时间轴卡片左右缩进少许，避免紧贴容器边缘 */
-#code-showcase .code-shell {
-  margin-left: var(--space-2);
-  margin-right: var(--space-2);
+/* ========================================
+   技术时间轴模块样式优化
+   目标：与技能卡片和项目模块保持统一的间距风格
+   ======================================== */
+
+/* 时间轴模块卡片：统一内边距，与技能卡片和项目模块一致 */
+#timeline .card {
+  /* 统一的内边距：上下 1.5rem (24px)，左右 1.5rem (24px) */
+  padding: var(--space-6) var(--space-6) !important;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-#timeline .card {
+/* 时间轴卡片内部容器：确保不紧贴边框 */
+#timeline .card-inner {
+  margin: 0;
+  padding: 0;
+}
+
+/* 时间轴卡片标题和副标题：确保不紧贴边框，有足够间距 */
+#timeline .card-title {
+  margin: 0;
+  margin-bottom: var(--space-2);
+  padding: 0;
+}
+
+#timeline .card-subtitle {
+  margin: 0;
+  margin-bottom: var(--space-4);
+  padding: 0;
+}
+
+/* 时间轴容器：确保与标题有足够间距 */
+#timeline .timeline {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+/* 时间轴项：统一间距，确保不拥挤 */
+#timeline .timeline-item {
+  margin: 0;
+  padding-left: 52px;
+  padding-right: 0;
+  padding-bottom: var(--space-4);
+}
+
+/* 最后一个时间轴项：移除底部间距，避免与卡片底部边框太近 */
+#timeline .timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+/* 时间轴年份、标题、正文：确保有合理的间距 */
+#timeline .timeline-year {
+  margin: 0;
+  padding: 0;
+}
+
+#timeline .timeline-title {
+  margin-top: var(--space-1);
+  margin-bottom: 0;
+  padding: 0;
+}
+
+#timeline .timeline-body {
+  margin-top: var(--space-2);
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* 时间轴标签：确保与正文有足够间距 */
+#timeline .timeline-tags {
+  margin-top: var(--space-2);
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+/* 技术方向标签列表：确保与标题有足够间距 */
+#timeline .pill-list {
+  margin-top: var(--space-4);
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+/* 代码区与时间轴卡片左右缩进少许，避免紧贴容器边缘 */
+#code-showcase .code-shell {
   margin-left: var(--space-2);
   margin-right: var(--space-2);
 }
