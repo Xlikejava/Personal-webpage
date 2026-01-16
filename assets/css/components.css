@@ -156,9 +156,59 @@
   gap: var(--space-4);
 }
 
-/* 技术栈与能力矩阵小卡片：让文本离左右边框更远一点 */
+/* ========================================
+   技术栈与能力矩阵卡片样式优化
+   目标：统一内边距，确保文字与边框有足够间距，排版工整舒适
+   ======================================== */
+
+/* 卡片容器：统一的内边距，上下左右都是 1.5rem (24px) */
 .skills-grid .card {
-  padding: calc(var(--space-5) + 4px) calc(var(--space-5) + var(--space-4)) !important;
+  padding: var(--space-6) var(--space-6) !important;
+}
+
+/* 卡片标题：确保与技能列表有足够间距 */
+.skills-grid .card-header {
+  margin-bottom: var(--space-4) !important;
+  padding: 0;
+}
+
+/* 卡片标题文字：确保不紧贴边框 */
+.skills-grid .card-title {
+  margin: 0;
+  padding: 0;
+}
+
+/* 技能列表容器：确保与卡片边框有足够间距 */
+.skills-grid .card-inner > div:last-child {
+  margin: 0;
+  padding: 0;
+}
+
+/* 技能项：统一间距，每个技能项之间保持 0.75rem (12px) 间距 */
+.skills-grid .skill-item {
+  margin-bottom: var(--space-3);
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+/* 最后一个技能项：移除底部间距，避免与卡片底部边框太近 */
+.skills-grid .skill-item:last-child {
+  margin-bottom: 0;
+}
+
+/* 技能项头部（技能名称 + 熟练度标签）：确保不紧贴左右边框 */
+.skills-grid .skill-item-header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* 技能进度条：确保与文字有足够间距 */
+.skills-grid .skill-bar {
+  margin-top: var(--space-2);
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .skill-group-title {
@@ -175,6 +225,9 @@
   justify-content: space-between;
   font-size: 0.82rem;
   color: var(--color-text-secondary);
+  /* 确保文字不会紧贴左右边缘 */
+  padding: 0;
+  margin: 0;
 }
 
 .skill-bar {
