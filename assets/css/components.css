@@ -569,10 +569,76 @@
   padding: 0;
 }
 
-/* 代码区与时间轴卡片左右缩进少许，避免紧贴容器边缘 */
+/* ========================================
+   代码一瞥模块样式优化
+   目标：与技能卡片、项目模块、时间轴模块保持统一的间距风格，并确保两个小模块等高
+   ======================================== */
+
+/* 代码一瞥模块网格：确保两个子元素等高 */
+#code-showcase .grid-2 {
+  align-items: stretch;
+}
+
+/* 代码一瞥模块左侧卡片：统一内边距，与其他模块一致 */
+#code-showcase .card {
+  /* 统一的内边距：上下 1.5rem (24px)，左右 1.5rem (24px) */
+  padding: var(--space-6) var(--space-6) !important;
+  height: 100%; /* 确保与右侧代码编辑器等高 */
+  display: flex;
+  flex-direction: column;
+}
+
+/* 代码一瞥模块左侧卡片内部容器 */
+#code-showcase .card-inner {
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 代码一瞥模块左侧卡片标题和副标题：确保不紧贴边框，有足够间距 */
+#code-showcase .card-title {
+  margin: 0;
+  margin-bottom: var(--space-2);
+  padding: 0;
+}
+
+#code-showcase .card-subtitle {
+  margin: 0;
+  margin-bottom: var(--space-4);
+  padding: 0;
+}
+
+/* 代码一瞥模块指标行：确保与副标题有足够间距 */
+#code-showcase .metric-row {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  flex: 1; /* 让指标行占据剩余空间，确保卡片高度 */
+}
+
+/* 代码一瞥模块右侧代码编辑器：统一高度和内边距 */
 #code-showcase .code-shell {
-  margin-left: var(--space-2);
-  margin-right: var(--space-2);
+  margin-left: 0;
+  margin-right: 0;
+  height: 100%; /* 确保与左侧卡片等高 */
+  display: flex;
+  flex-direction: column;
+}
+
+/* 代码编辑器头部：保持原有样式，确保不紧贴边框 */
+#code-showcase .code-header {
+  flex-shrink: 0; /* 头部不收缩 */
+}
+
+/* 代码编辑器内容区：占据剩余空间，移除最大高度限制以支持等高 */
+#code-showcase .code-body {
+  flex: 1; /* 占据剩余空间，确保编辑器高度 */
+  min-height: 0; /* 允许内容区收缩 */
+  max-height: none; /* 移除最大高度限制，让编辑器与左侧卡片等高 */
 }
 
 .code-header {
@@ -642,8 +708,9 @@
     "Liberation Mono", "Courier New", monospace;
   font-size: 0.78rem;
   color: #e5e7eb;
-  max-height: 320px;
   overflow: auto;
+  /* 代码一瞥模块外的代码编辑器：保持原有的最大高度限制 */
+  max-height: 320px;
 }
 
 .code-line {
