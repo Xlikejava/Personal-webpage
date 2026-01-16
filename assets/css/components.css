@@ -255,11 +255,47 @@
   transform: scaleX(1);
 }
 
+/* ========================================
+   代表项目作品模块样式优化
+   目标：与技能卡片模块保持统一的间距风格
+   ======================================== */
+
+/* 项目模块外层卡片：统一内边距，与技能卡片一致 */
+#projects .card {
+  padding: var(--space-6) var(--space-6) !important;
+}
+
+/* 项目模块标题区域：确保与过滤栏有足够间距 */
+#projects .card-header {
+  margin-bottom: var(--space-4) !important;
+  padding: 0;
+}
+
+/* 项目模块标题和描述：确保不紧贴边框 */
+#projects .card-title,
+#projects .card-subtitle {
+  margin: 0;
+  padding: 0;
+}
+
+/* 过滤栏：确保与标题和项目网格都有足够间距 */
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
+  margin-top: 0;
   margin-bottom: var(--space-4);
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+/* 项目网格：确保与过滤栏有足够间距 */
+#projects .projects-grid {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
 }
 
 .filter-btn {
@@ -290,9 +326,11 @@
   gap: var(--space-4);
 }
 
+/* 单个项目卡片：统一内边距，确保文字与边框有足够间距 */
 .project-card {
   border-radius: var(--radius-lg);
-  padding: var(--space-4);
+  /* 使用与技能卡片一致的内边距风格：上下 1.25rem，左右 1.25rem */
+  padding: calc(var(--space-4) + var(--space-1)) calc(var(--space-4) + var(--space-1));
   background: radial-gradient(
     circle at top left,
     rgba(15, 23, 42, 1),
@@ -315,20 +353,34 @@
   color: #a5b4fc;
 }
 
+/* 项目卡片内部元素：确保有合理的间距，不紧贴边框 */
+.project-badge {
+  margin: 0;
+  padding: 0;
+}
+
 .project-title {
   font-size: 1.05rem;
   font-weight: 600;
-  margin-top: 0.25rem;
+  margin-top: var(--space-2);
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .project-description {
   font-size: 0.9rem;
   color: var(--color-text-secondary);
   margin-top: var(--space-2);
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .project-metrics {
   margin-top: var(--space-3);
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-3);
@@ -351,6 +403,10 @@
 
 .project-card-footer {
   margin-top: var(--space-3);
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-2);
