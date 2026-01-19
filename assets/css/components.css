@@ -172,6 +172,7 @@
 /* 学习方向卡片：与技能卡片一致的内边距与留白 */
 #learning .card {
   padding: var(--space-6) var(--space-6) !important;
+  margin-top: var(--space-6);
 }
 
 /* 卡片内部：使用列布局并统一上下留白 */
@@ -209,6 +210,18 @@
 /* 学习方向卡片标题文字：与技能卡片一致 */
 #learning .card-title {
   margin: 0;
+  padding: 0;
+}
+
+/* 学习方向标签区：使用与项目过滤区一致的留白与间距 */
+#learning .pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: var(--space-3);
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
   padding: 0;
 }
 
