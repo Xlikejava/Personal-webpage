@@ -169,6 +169,13 @@
   padding: var(--space-6) var(--space-6) !important;
 }
 
+/* 卡片内部：使用列布局并统一上下留白 */
+.skills-grid .card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
 /* 卡片标题：确保与技能列表有足够间距 */
 .skills-grid .card-header {
   margin-bottom: var(--space-4) !important;
@@ -183,7 +190,7 @@
 
 /* 技能列表容器：确保与卡片边框有足够间距 */
 .skills-grid .card-inner > div:last-child {
-  margin: 0;
+  margin: var(--space-3) 0 0 0;
   padding: 0;
 }
 
@@ -192,7 +199,7 @@
   margin-bottom: var(--space-3);
   margin-left: 0;
   margin-right: 0;
-  padding: 0;
+  padding: var(--space-1) 0;
 }
 
 /* 最后一个技能项：移除底部间距，避免与卡片底部边框太近 */
