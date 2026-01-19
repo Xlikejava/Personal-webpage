@@ -4,7 +4,7 @@
       "id": "ecommerce-microservices",
       "title": "电商微服务平台",
       "shortDescription": "企业级电商系统，支撑日订单 100 万+，QPS 5000+，端到端延迟 < 100ms。",
-      "techStack": ["PHP", "Laravel", "MySQL", "Redis", "Docker", "Kafka"],
+      "techStack": ["PHP", "Laravel", "MySQL", "Redis", "Docker", "Elasticsearch"],
       "completionDate": "2023-12",
       "githubUrl": "",
       "demoUrl": "",

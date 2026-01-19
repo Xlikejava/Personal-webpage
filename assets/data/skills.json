@@ -6,7 +6,7 @@
       "items": [
         { "name": "PHP 7.4 / 8.0", "level": 95, "label": "精通" },
         { "name": "Laravel / ThinkPHP", "level": 92, "label": "精通" },
-        { "name": "设计模式 / DDD", "level": 90, "label": "精通" }
+        { "name": "面向对象编程", "level": 90, "label": "精通" }
       ]
     },
     {
@@ -24,7 +24,7 @@
       "items": [
         { "name": "Docker / Kubernetes", "level": 85, "label": "熟练" },
         { "name": "RESTful API / GraphQL", "level": 95, "label": "精通" },
-        { "name": "消息队列（RabbitMQ / Kafka）", "level": 82, "label": "熟练" }
+        { "name": "消息队列（RabbitMQ / Elasticsearch）", "level": 82, "label": "熟练" }
       ]
     },
     {
