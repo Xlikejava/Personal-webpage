@@ -169,8 +169,20 @@
   padding: var(--space-6) var(--space-6) !important;
 }
 
+/* 学习方向卡片：与技能卡片一致的内边距与留白 */
+#learning .card {
+  padding: var(--space-6) var(--space-6) !important;
+}
+
 /* 卡片内部：使用列布局并统一上下留白 */
 .skills-grid .card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+/* 学习方向卡片内部：与技能卡片一致 */
+#learning .card-inner {
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
@@ -182,8 +194,20 @@
   padding: 0;
 }
 
+/* 学习方向卡片标题：与技能卡片一致 */
+#learning .card-header {
+  margin-bottom: var(--space-4) !important;
+  padding: 0;
+}
+
 /* 卡片标题文字：确保不紧贴边框 */
 .skills-grid .card-title {
+  margin: 0;
+  padding: 0;
+}
+
+/* 学习方向卡片标题文字：与技能卡片一致 */
+#learning .card-title {
   margin: 0;
   padding: 0;
 }
