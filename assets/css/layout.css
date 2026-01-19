@@ -384,6 +384,11 @@
   margin-top: var(--space-6);
 }
 
+/* 学习方向模块：确保与其他 section 间距一致 */
+#learning .card {
+  margin-top: var(--space-6);
+}
+
 .grid {
   display: grid;
   gap: var(--space-6);
