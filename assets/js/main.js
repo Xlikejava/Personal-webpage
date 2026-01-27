@@ -5,6 +5,7 @@ import { Skills } from "./modules/skills.js";
 import { Timeline } from "./modules/timeline.js";
 import { Animations } from "./modules/animations.js";
 import { Contact } from "./modules/contact.js";
+import { Documents } from "./modules/documents.js";
 
 window.addEventListener("DOMContentLoaded", async () => {
   const core = new Core();
@@ -24,6 +25,9 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   const timeline = new Timeline();
   timeline.init();
+
+  const documents = new Documents();
+  documents.init();
 
   const contact = new Contact();
   contact.init();

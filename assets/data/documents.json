@@ -1,0 +1,44 @@
+{
+  "categories": [
+    {
+      "id": "laravel",
+      "name": "Laravel",
+      "documents": [
+        {
+          "title": "laravel sout（全文搜索）",
+          "url": "https://www.yuque.com/haoyue-ssjpp/hyhbf6/gbz0pqmgwcgxeg7x?singleDoc#"
+        },
+        {
+          "title": "验证码设置",
+          "url": "https://www.yuque.com/haoyue-ssjpp/hyhbf6/lmqpgywewbyrh10m?singleDoc#"
+        },
+        {
+          "title": "二维码生成",
+          "url": "https://www.yuque.com/haoyue-ssjpp/hyhbf6/tv01hcvpvuq2ab2b?singleDoc#"
+        }
+      ]
+    },
+    {
+      "id": "dcat-admin",
+      "name": "Dcat Admin",
+      "documents": [
+        {
+          "title": "导入导出Excel",
+          "url": "https://www.yuque.com/haoyue-ssjpp/hyhbf6/stvuxn8g3w3pqvlb?singleDoc#"
+        },
+        {
+          "title": "后台语言切换功能",
+          "url": "https://www.yuque.com/haoyue-ssjpp/hyhbf6/gh9szmzirv8ye9c2?singleDoc#"
+        },
+        {
+          "title": "图片预览 扩展插件",
+          "url": "https://www.yuque.com/haoyue-ssjpp/hyhbf6/ke5a2s0ls0gudmao?singleDoc#"
+        },
+        {
+          "title": "模型树的使用",
+          "url": "https://www.yuque.com/haoyue-ssjpp/hyhbf6/glnzqc337mcl65pk?singleDoc#"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN" data-theme="dark">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -43,8 +43,8 @@
     <link rel="stylesheet" href="assets/css/components.css" />
     <link rel="stylesheet" href="assets/css/animations.css" />
     <link rel="stylesheet" href="assets/css/themes.css" />
-  </head>
-  <body>
+</head>
+<body>
     <div class="page">
       <header class="site-header">
         <div class="container">
@@ -57,7 +57,7 @@
               </div>
             </div>
             <div class="nav-center">
-              <div class="nav-links">
+            <div class="nav-links">
                 <a href="#hero" class="nav-link" data-nav="link">概览</a>
                 <a href="#skills" class="nav-link" data-nav="link">技术栈</a>
                 <a href="#projects" class="nav-link" data-nav="link">项目作品</a>
@@ -65,6 +65,7 @@
                 <a href="#code-showcase" class="nav-link" data-nav="link"
                   >代码一瞥</a
                 >
+                <a href="#documents" class="nav-link" data-nav="link">文档中心</a>
                 <a href="#contact" class="nav-link" data-nav="link">联系我</a>
               </div>
             </div>
@@ -84,7 +85,7 @@
                 >
                   A+
                 </button>
-              </div>
+            </div>
               <button
                 type="button"
                 class="toggle-pill"
@@ -102,7 +103,7 @@
                 ☰
               </button>
             </div>
-          </nav>
+        </nav>
           <div class="nav-mobile-panel" data-nav="panel">
             <div class="nav-mobile-links">
               <a href="#hero" data-nav="link">概览</a>
@@ -110,11 +111,12 @@
               <a href="#projects" data-nav="link">项目作品</a>
               <a href="#timeline" data-nav="link">技术时间轴</a>
               <a href="#code-showcase" data-nav="link">代码一瞥</a>
+              <a href="#documents" data-nav="link">文档中心</a>
               <a href="#contact" data-nav="link">联系我</a>
             </div>
           </div>
         </div>
-      </header>
+    </header>
 
       <main class="page-main">
         <section
@@ -193,7 +195,7 @@
                 </div>
               </div>
             </div>
-          </div>
+            </div>
         </section>
 
         <section
@@ -206,8 +208,8 @@
             <h2 id="skills-title" class="section-title">技术栈与能力矩阵</h2>
             <div class="skills-grid fade-up" id="skills-grid">
               <!-- JS 根据 assets/data/skills.json 填充 -->
+                </div>
             </div>
-          </div>
         </section>
 
         <section
@@ -216,7 +218,7 @@
           data-section
           aria-labelledby="projects-title"
         >
-          <div class="container">
+            <div class="container">
             <h2 id="projects-title" class="section-title">代表项目作品</h2>
             <div class="card fade-up">
               <div class="card-inner">
@@ -231,9 +233,9 @@
                 </header>
                 <div id="project-filters" class="filter-bar"></div>
                 <div id="projects-container" class="projects-grid"></div>
-              </div>
-            </div>
-          </div>
+                        </div>
+                        </div>
+                    </div>
         </section>
 
         <section
@@ -251,10 +253,10 @@
                   <div class="card-subtitle">
                     每一段经历，都是为更好地理解「业务 · 性能 ·
                     稳定」之间的平衡。
-                  </div>
+                        </div>
                   <div id="timeline-list" class="timeline"></div>
-                </div>
-              </div>
+                        </div>
+                    </div>
               <div class="card fade-up">
                 <div class="card-inner">
                   <div class="card-title">关注的技术方向</div>
@@ -265,11 +267,11 @@
                     <span class="pill">服务治理与可观测性</span>
                     <span class="pill">老系统现代化改造</span>
                     <span class="pill">工程效率与 CI/CD</span>
-                  </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </section>
 
         <section
@@ -278,7 +280,7 @@
           data-section
           aria-labelledby="code-title"
         >
-          <div class="container">
+            <div class="container">
             <h2 id="code-title" class="section-title">代码一瞥</h2>
             <div class="grid grid-2">
               <div class="fade-up">
@@ -298,24 +300,48 @@
                         <span>仓储与服务可单测</span>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
+                        </div>
+                        </div>
+                    </div>
               <div class="code-shell fade-up">
                 <div class="code-header">
                   <div class="code-dots">
                     <span class="code-dot red"></span>
                     <span class="code-dot yellow"></span>
                     <span class="code-dot green"></span>
-                  </div>
+                        </div>
                   <div class="code-title">app/Http/Controllers/OrderController.php</div>
                   <div class="code-tabs">
                     <button class="code-tab is-active" type="button">
                       PHP API
                     </button>
-                  </div>
-                </div>
+                        </div>
+                    </div>
                 <pre class="code-body"><code id="code-typewriter"></code><span class="typewriter-caret"></span></pre>
+                        </div>
+                        </div>
+                    </div>
+        </section>
+
+        <section
+          id="documents"
+          class="section"
+          data-section
+          aria-labelledby="documents-title"
+        >
+          <div class="container">
+            <h2 id="documents-title" class="section-title">文档中心</h2>
+            <div class="card fade-up">
+              <div class="card-inner">
+                <header class="card-header">
+                  <div>
+                    <div class="card-title">技术文档与教程</div>
+                    <div class="card-subtitle">
+                      记录 Laravel 与 Dcat Admin 开发过程中的实践总结与解决方案。
+                    </div>
+                  </div>
+                </header>
+                <div id="documents-container"></div>
               </div>
             </div>
           </div>
@@ -332,7 +358,7 @@
                     <div class="card-subtitle">
                       聚焦前端、全栈与后端体系化提升，同时关注即时通讯、区块链与 Go/Gin 框架的实践落地。
                     </div>
-                  </div>
+                        </div>
                 </header>
                 <div class="pill-list">
                   <span class="pill accent">前端深度学习</span>
@@ -341,10 +367,10 @@
                   <span class="pill">区块链学习开发</span>
                   <span class="pill">Go 语言学习</span>
                   <span class="pill">Gin 框架使用</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </section>
 
         <section
@@ -353,7 +379,7 @@
           data-section
           aria-labelledby="contact-title"
         >
-          <div class="container">
+            <div class="container">
             <h2 id="contact-title" class="section-title">联系与合作</h2>
             <div class="contact-layout fade-up">
               <div>
@@ -361,7 +387,7 @@
                   <div class="contact-item-main">
                     <strong>工作邮箱</strong>
                     <span class="contact-email">zzwr_01@163.com</span>
-                  </div>
+                        </div>
                   <div>
                     <button
                       type="button"
@@ -371,8 +397,8 @@
                     >
                       复制邮箱
                     </button>
-                  </div>
-                </div>
+                        </div>
+                    </div>
                 <div
                   class="contact-copy-status"
                   data-copy-status
@@ -387,7 +413,7 @@
                     target="_blank"
                     rel="noopener"
                   >
-                    GitHub <span></span>
+                    GitHub <span>@yourusername</span>
                   </a>
                   <a
                     href="#"
@@ -396,7 +422,7 @@
                     target="_blank"
                     rel="noopener"
                   >
-                    LinkedIn <span></span>
+                    LinkedIn <span>/yourprofile</span>
                   </a>
                   <a
                     href="#"
@@ -407,8 +433,8 @@
                   >
                     技术博客
                   </a>
-                </div>
-              </div>
+                        </div>
+                    </div>
               <form
                 id="contact-form"
                 class="contact-form"
@@ -439,7 +465,7 @@
                       maxlength="50"
                     />
                     <div class="form-error" data-error-for="name"></div>
-                  </div>
+                        </div>
                   <div class="form-group">
                     <label class="form-label" for="email"
                       >邮箱 <span>* 必填</span></label
@@ -452,9 +478,9 @@
                       required
                     />
                     <div class="form-error" data-error-for="email"></div>
-                  </div>
-                </div>
-
+                        </div>
+                    </div>
+                    
                 <div class="form-group">
                   <label class="form-label" for="message"
                     >想聊些什么？<span>* 简要说明合作或问题场景</span></label
@@ -469,7 +495,7 @@
                     maxlength="1000"
                   ></textarea>
                   <div class="form-error" data-error-for="message"></div>
-                </div>
+                        </div>
 
                 <div class="form-actions">
                   <button type="submit" class="btn btn-primary">
@@ -480,12 +506,12 @@
                     data-form-status
                     aria-live="polite"
                   ></div>
-                </div>
+                        </div>
               </form>
+                </div>
             </div>
-          </div>
         </section>
-      </main>
+    </main>
 
       <footer class="site-footer">
         <div class="container">
@@ -501,9 +527,9 @@
             <div>
               <!-- 偏好设置（主题、字体大小）仅存储在本地浏览器，方便再次访问。 -->
             </div>
-          </div>
+            </div>
         </div>
-      </footer>
+    </footer>
 
       <button
         type="button"
@@ -516,6 +542,5 @@
     </div>
 
     <script type="module" src="assets/js/main.js"></script>
-  </body>
+</body>
 </html>
-

@@ -997,6 +997,110 @@
   }
 }
 
+/* ========================================
+   文档中心模块样式
+   目标：与其他模块保持统一的间距风格
+   ======================================== */
+
+/* 文档模块卡片：统一内边距，与其他模块一致 */
+#documents .card {
+  padding: var(--space-6) var(--space-6) !important;
+}
+
+/* 文档模块卡片内部容器 */
+#documents .card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+}
+
+/* 文档模块标题区域 */
+#documents .card-header {
+  margin-bottom: var(--space-4) !important;
+  padding: 0;
+}
+
+/* 文档模块标题和副标题 */
+#documents .card-title {
+  margin: 0;
+  padding: 0;
+}
+
+#documents .card-subtitle {
+  margin: 0;
+  padding: 0;
+}
+
+/* 文档容器 */
+#documents-container {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6);
+}
+
+/* 文档分类 */
+.document-category {
+  margin: 0;
+  padding: 0;
+}
+
+.document-category-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 var(--space-3) 0;
+  padding: 0;
+  color: var(--color-text);
+}
+
+/* 文档列表 */
+.document-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.document-item {
+  margin: 0;
+  padding: 0;
+}
+
+/* 文档链接 */
+.document-link {
+  display: block;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  background: radial-gradient(
+    circle at top left,
+    rgba(17, 24, 39, 0.95),
+    rgba(15, 23, 42, 0.96)
+  );
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  color: var(--color-text);
+  font-size: 0.9rem;
+  transition: transform var(--transition-fast),
+    box-shadow var(--transition-fast), border-color var(--transition-fast),
+    background-color var(--transition-fast);
+  text-decoration: none;
+}
+
+.document-link:hover {
+  transform: translateY(-1px);
+  border-color: rgba(59, 130, 246, 0.6);
+  box-shadow: var(--shadow-sm);
+  background: radial-gradient(
+    circle at top left,
+    rgba(37, 99, 235, 0.15),
+    rgba(15, 23, 42, 0.98)
+  );
+}
+
 @media (max-width: 768px) {
   .projects-grid {
     grid-template-columns: minmax(0, 1fr);
@@ -1012,6 +1116,10 @@
 
   .code-body {
     max-height: 280px;
+  }
+
+  #documents-container {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
