@@ -45,9 +45,9 @@ window.addEventListener("DOMContentLoaded", async () => {
       if (linkedin && cfg.social.linkedin) {
         linkedin.href = cfg.social.linkedin;
       }
-      const blog = document.querySelector("[data-social='blog']");
-      if (blog && cfg.social.blog) {
-        blog.href = cfg.social.blog;
+      const gitee = document.querySelector("[data-social='gitee']");
+      if (gitee && cfg.social.gitee) {
+        gitee.href = cfg.social.gitee;
       }
     }
   } catch {
