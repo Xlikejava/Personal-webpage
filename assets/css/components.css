@@ -414,6 +414,7 @@
   mask-composite: exclude;
   transition: background 0.4s var(--ease-in-out);
   pointer-events: none;
+  z-index: 1;
 }
 
 .project-card:hover {
@@ -424,6 +425,12 @@
 
 .project-card:hover::before {
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.6), rgba(139, 92, 246, 0.4), rgba(6, 182, 212, 0.5));
+}
+
+/* Spotlight 光斑容器 z-index */
+.project-card > *:not(.spotlight-glow) {
+  position: relative;
+  z-index: 2;
 }
 
 .project-badge {

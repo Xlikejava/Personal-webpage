@@ -7,6 +7,8 @@ import { Animations } from "./modules/animations.js";
 import { Contact } from "./modules/contact.js";
 import { Documents } from "./modules/documents.js";
 import { MorphSlider } from "./modules/morph-slider.js";
+import { Particles } from "./modules/particles.js";
+import { Spotlight } from "./modules/spotlight.js";
 
 window.addEventListener("DOMContentLoaded", async () => {
   const core = new Core();
@@ -23,6 +25,17 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   const morph = new MorphSlider();
   morph.init();
+
+  // 粒子背景
+  const heroSection = document.getElementById("hero");
+  if (heroSection) {
+    const particles = new Particles(heroSection);
+    particles.init();
+  }
+
+  // 项目卡片光斑
+  const spotlight = new Spotlight();
+  spotlight.init();
 
   const projects = new ProjectManager();
   projects.init();

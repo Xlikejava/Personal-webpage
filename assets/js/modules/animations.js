@@ -16,11 +16,21 @@ export class Animations {
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
-          entry.target.classList.add("is-visible");
+
+          // 交错延迟：同级兄弟元素依次出现
+          const parent = entry.target.parentElement;
+          const siblings = parent ? Array.from(parent.querySelectorAll(".fade-up, .scale-in")) : [];
+          const index = siblings.indexOf(entry.target);
+          const delay = index >= 0 ? index * 80 : 0;
+
+          setTimeout(() => {
+            entry.target.classList.add("is-visible");
+          }, delay);
+
           observer.unobserve(entry.target);
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
     );
 
     elements.forEach((el) => observer.observe(el));
