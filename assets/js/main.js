@@ -6,6 +6,7 @@ import { Timeline } from "./modules/timeline.js";
 import { Animations } from "./modules/animations.js";
 import { Contact } from "./modules/contact.js";
 import { Documents } from "./modules/documents.js";
+import { MorphSlider } from "./modules/morph-slider.js";
 
 window.addEventListener("DOMContentLoaded", async () => {
   const core = new Core();
@@ -19,6 +20,9 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   const animations = new Animations();
   animations.init();
+
+  const morph = new MorphSlider();
+  morph.init();
 
   const projects = new ProjectManager();
   projects.init();
