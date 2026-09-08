@@ -87,24 +87,43 @@ export class Animations {
     if (!el) return;
 
     const snippets = [
-      `$router->group('/api', function (Router $r) {
-  $r->get('/health', [HealthController::class, 'check']);
-  $r->group('/v1', function (Router $v1) {
-    $v1->get('/orders/{id}', [OrderController::class, 'show']);
-  });
+      `// MCP 工具注册 —— 统一元数据与入参 Schema
+interface McpToolDef {
+  name: string;
+  description: string;
+  inputSchema: JSONSchema;
+  handler: (params: unknown) => Promise<ToolResult>;
+}
+
+registry.register({
+  name: "query_vehicle_records",
+  description: "查询车辆档案与维保记录",
+  inputSchema: z.object({ plateNo: z.string(), tenantCode: z.string() }),
+  handler: async ({ plateNo, tenantCode }) => {
+    const records = await db.vehicleRecord.findMany({
+      where: { plateNo, tenantCode },
+      orderBy: { serviceDate: "desc" },
+    });
+    return { content: [{ type: "text", text: JSON.stringify(records) }] };
+  },
 });`,
-      `class OrderRepository
-{
-  public function findActiveByUser(int $userId): Collection
-  {
-    return Order::query()
-      ->where('user_id', $userId)
-      ->where('status', 'paid')
-      ->where('paid_at', '>=', now()->subDays(30))
-      ->orderByDesc('paid_at')
-      ->get();
-  }
-}`,
+      `// Agent 工作流编排 —— 变量-LLM-工具-结构化输出
+const workflow = new AgentWorkflow("maintenance-advisor");
+
+workflow
+  .input("vehicleInfo", z.object({ plateNo: z.string() }))
+  .step("fetchRecords", tool("query_vehicle_records"))
+  .step("analyzeLLM", llm({
+    model: "deepseek-chat",
+    systemPrompt: "你是汽修顾问，根据车辆档案推荐维保方案",
+    context: { records: step("fetchRecords") },
+    responseFormat: z.object({
+      recommendation: z.string(),
+      urgency: z.enum(["low", "medium", "high"]),
+      estimatedCost: z.number(),
+    }),
+  }))
+  .output(step("analyzeLLM"));`,
     ];
 
     let idx = 0;

@@ -1,90 +1,106 @@
 {
   "projects": [
     {
-      "id": "ecommerce-microservices",
-      "title": "电商微服务平台",
-      "shortDescription": "企业级电商系统，支撑日订单 100 万+，QPS 5000+，端到端延迟 < 100ms。",
-      "techStack": ["PHP", "Laravel", "MySQL", "Redis", "Docker", "Elasticsearch"],
-      "completionDate": "2023-12",
+      "id": "ai-yangche",
+      "title": "AI 养车 · 汽后多租户 AI SaaS",
+      "shortDescription": "面向汽修门店的 B2B2C 多租户 AI SaaS 平台，将 Agent 能力嵌入门店经营全链路，服务门店、店员、车主三方角色。",
+      "techStack": ["FastAPI", "Dify", "Taro4", "企业微信", "Docker"],
+      "completionDate": "2026",
       "githubUrl": "",
       "demoUrl": "",
       "metrics": {
-        "日订单量": "100 万+",
-        "峰值 QPS": "5000+",
-        "响应时间": "< 100ms"
+        "业务工作流": "6+ 条",
+        "角色覆盖": "门店 / 店员 / 车主",
+        "部署方式": "多租户容器化"
       },
-      "category": ["后端", "微服务", "电商"]
+      "category": ["AI Agent", "SaaS", "全栈"],
+      "details": [
+        "主导 Dify 私有化部署与业务工作流编排，设计 AI 唤醒对话、经营简报、维保推荐、营销文案生成、客户流失预警等工作流",
+        "实现 Agent 工具调用与多租户隔离：工具节点对接业务接口，约束大模型输出强结构化 JSON，基于租户标识隔离数据与知识库",
+        "设计大模型超时/报错场景下熔断降级策略，保障 AI 服务异常时基础业务链路不受影响",
+        "完成容器化部署运维，实现租户资源与模型调用用量统计，支撑多门店同时接入"
+      ]
     },
     {
-      "id": "realtime-analytics",
-      "title": "实时数据分析平台",
-      "shortDescription": "构建从采集、流式计算到多维分析的实时数据平台，日处理数据量 10TB+。",
-      "techStack": ["PHP", "Flink", "Elasticsearch"],
-      "completionDate": "2022-08",
+      "id": "work-agent",
+      "title": "WorkAgent · 企业智能体对话平台",
+      "shortDescription": "面向内部业务系统的 Agent 对话服务底座，提供智能体配置、会话管理、工具注册调度能力。",
+      "techStack": ["TypeScript", "Elysia", "React 18", "MCP"],
+      "completionDate": "2026",
       "githubUrl": "",
       "demoUrl": "",
       "metrics": {
-        "数据量": "10TB/天",
-        "查询延迟": "< 1s"
+        "工具协议": "MCP",
+        "服务模式": "标准化 Agent API",
+        "核心能力": "工具动态注册 + 调度"
       },
-      "category": ["大数据", "实时计算"]
+      "category": ["AI Agent", "平台"],
+      "details": [
+        "基于 Elysia 搭建高性能后端服务，React 18 实现管理后台",
+        "设计基于 MCP 协议的工具注册与调用调度体系，统一管理工具元数据与入参 Schema",
+        "建立工具调用追踪与监控机制，快速定位失败环节，支撑工具生态持续迭代",
+        "对外输出标准化 Agent 服务 API，供上层业务快速接入智能对话能力"
+      ]
     },
     {
-      "id": "sso-auth",
-      "title": "统一认证授权系统",
-      "shortDescription": "基于 OAuth2.0 + JWT 的企业级统一认证中心，支持多租户与多因素认证。",
-      "techStack": ["PHP", "OAuth 2.0", "JWT", "Spring Security"],
-      "completionDate": "2021-11",
+      "id": "video-forge",
+      "title": "VideoForge · AI 电商视频生成",
+      "shortDescription": "AI 数字人视频异步生产流水线，从文案生成到视频合成全链路自动化。",
+      "techStack": ["React", "FastAPI", "Celery", "火山引擎"],
+      "completionDate": "2026",
       "githubUrl": "",
       "demoUrl": "",
       "metrics": {
-        "接入系统": "30+",
-        "可用性": "99.99%"
+        "任务链": "文案→TTS→视频→字幕",
+        "容错": "积分预扣 + 失败回滚",
+        "存储": "MinIO / 火山 TOS"
       },
-      "category": ["安全", "认证授权"]
+      "category": ["AI", "异步架构"],
+      "details": [
+        "基于 Celery 编排文案生成-TTS-视频合成-字幕渲染全异步任务链",
+        "实现积分预扣与任务失败自动回滚机制",
+        "封装对象存储层兼容 MinIO 与火山 TOS",
+        "集成大模型与数字人接口完成电商素材自动生成"
+      ]
     },
     {
-      "id": "api-gateway",
-      "title": "API 网关与治理平台",
-      "shortDescription": "面向微服务的网关与治理平台，支持动态路由、熔断降级与限流。",
-      "techStack": ["PHP", "Go", "Redis", "Nginx"],
-      "completionDate": "2020-09",
+      "id": "intellprime",
+      "title": "IntellPrime · 跨境工业品询盘平台",
+      "shortDescription": "面向俄罗斯、中东市场的跨境 B2B 展示询盘系统，支持多语言与海外访问优化。",
+      "techStack": ["Next.js 14", "NestJS 10", "Prisma", "BullMQ"],
+      "completionDate": "2026",
       "githubUrl": "",
       "demoUrl": "",
       "metrics": {
-        "日请求量": "10 亿+",
-        "平均延迟": "< 50ms"
+        "目标市场": "俄罗斯 / 中东",
+        "架构": "Monorepo",
+        "国际化": "i18n 多语言"
       },
-      "category": ["中间件", "架构"]
+      "category": ["全栈", "跨境"],
+      "details": [
+        "Monorepo 架构开发，实现 i18n 多语言、安全鉴权、邮件询盘、搜索缓存等能力",
+        "面向海外用户访问优化，适配俄罗斯、中东市场"
+      ]
     },
     {
-      "id": "cms-refactor",
-      "title": "内容管理系统重构",
-      "shortDescription": "将老旧 CMS 从 PHP 5.6 升级至 8.0，并彻底重构架构与核心模块。",
-      "techStack": ["PHP 8.0", "重构", "性能优化"],
-      "completionDate": "2019-06",
+      "id": "auction-system",
+      "title": "高并发拍卖系统",
+      "shortDescription": "基于 Laravel + Redis 的竞价抢拍系统，支撑 2 万+终端用户并发，核心接口响应提升 60%。",
+      "techStack": ["PHP", "Laravel", "Redis", "Workerman"],
+      "completionDate": "2025",
       "githubUrl": "",
       "demoUrl": "",
       "metrics": {
-        "性能提升": "300%",
-        "内存下降": "60%"
+        "并发用户": "2 万+",
+        "响应提升": "60%",
+        "消息方案": "先落库再推送"
       },
-      "category": ["重构", "性能"]
-    },
-    {
-      "id": "oss-contrib",
-      "title": "开源贡献项目",
-      "shortDescription": "持续为社区项目提交 PR，涉及框架扩展、性能优化与文档改进。",
-      "techStack": ["PHP", "Open Source"],
-      "completionDate": "持续中",
-      "githubUrl": "https://github.com/yourusername",
-      "demoUrl": "",
-      "metrics": {
-        "GitHub Star": "500+",
-        "被采用项目": "多家头部业务"
-      },
-      "category": ["开源", "社区"]
+      "category": ["后端", "高并发"],
+      "details": [
+        "基于 Laravel 队列 + Redis 处理竞价抢拍业务，优化核心接口响应速度提升约 60%",
+        "基于 Workerman 搭建 IM 长连接服务，采用先落库再推送方案保障消息可靠性",
+        "实现断线重连与历史消息补拉"
+      ]
     }
   ]
 }
-

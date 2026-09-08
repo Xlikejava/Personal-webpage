@@ -1,42 +1,30 @@
 {
   "categories": [
     {
-      "id": "laravel",
-      "name": "Laravel",
+      "id": "ai-agent",
+      "name": "AI Agent",
       "documents": [
         {
-          "title": "laravel sout（全文搜索）",
-          "url": "https://www.yuque.com/haoyue-ssjpp/hyhbf6/gbz0pqmgwcgxeg7x?singleDoc#"
+          "title": "Agent 工具系统设计实践",
+          "url": "https://gitee.com/Ashen-share"
         },
         {
-          "title": "验证码设置",
-          "url": "https://www.yuque.com/haoyue-ssjpp/hyhbf6/lmqpgywewbyrh10m?singleDoc#"
-        },
-        {
-          "title": "二维码生成",
-          "url": "https://www.yuque.com/haoyue-ssjpp/hyhbf6/tv01hcvpvuq2ab2b?singleDoc#"
+          "title": "多租户 AI SaaS 架构设计",
+          "url": "https://gitee.com/Ashen-share"
         }
       ]
     },
     {
-      "id": "dcat-admin",
-      "name": "Dcat Admin",
+      "id": "fullstack",
+      "name": "全栈工程",
       "documents": [
         {
-          "title": "导入导出Excel",
-          "url": "https://www.yuque.com/haoyue-ssjpp/hyhbf6/stvuxn8g3w3pqvlb?singleDoc#"
+          "title": "跨境 B2B 平台架构设计",
+          "url": "https://gitee.com/Ashen-share"
         },
         {
-          "title": "后台语言切换功能",
-          "url": "https://www.yuque.com/haoyue-ssjpp/hyhbf6/gh9szmzirv8ye9c2?singleDoc#"
-        },
-        {
-          "title": "图片预览 扩展插件",
-          "url": "https://www.yuque.com/haoyue-ssjpp/hyhbf6/ke5a2s0ls0gudmao?singleDoc#"
-        },
-        {
-          "title": "模型树的使用",
-          "url": "https://www.yuque.com/haoyue-ssjpp/hyhbf6/glnzqc337mcl65pk?singleDoc#"
+          "title": "高并发 IM 长连接实践",
+          "url": "https://gitee.com/Ashen-share"
         }
       ]
     }

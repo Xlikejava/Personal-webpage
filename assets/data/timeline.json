@@ -1,11 +1,22 @@
 {
   "items": [
     {
-      "year": "2025",
-      "title": "PHP 后端工程师",
-      "body": "负责核心业务线的整体后端架构设计与演进，主导多项目微服务改造与稳定性治理。",
-      "tags": ["架构设计", "稳定性", "高并发"]
+      "year": "2026.04",
+      "title": "AI Agent 工程师 · 上海迷你谷",
+      "body": "参与 4 个 AI 产品从 0→1 建设：AI 养车多租户 SaaS、WorkAgent 智能体平台、VideoForge 视频生成、IntellPrime 跨境询盘。负责 Agent 架构设计、工作流编排、MCP 工具系统开发与容器化部署运维。",
+      "tags": ["Agent 架构", "Dify", "MCP", "多租户 SaaS"]
+    },
+    {
+      "year": "2025.02",
+      "title": "PHP 开发工程师 · 北京云蓬科技",
+      "body": "负责拍卖业务后端与 IM 长连接系统开发。基于 Laravel + Redis 实现高并发竞价抢拍，核心接口响应提升 60%，支撑 2 万+终端用户。",
+      "tags": ["Laravel", "Redis", "高并发", "IM 长连接"]
+    },
+    {
+      "year": "2023.09",
+      "title": "本科就读 · 商丘学院",
+      "body": "数据科学与大数据技术专业，主修 Python、Spark 大数据、MySQL、Redis，建立扎实的数据结构与算法基础。",
+      "tags": ["数据科学", "Python", "Spark"]
     }
   ]
 }
-

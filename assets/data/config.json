@@ -1,13 +1,13 @@
 {
-  "name": "阿绅",
-  "role": "PHP 后端工程师 / 全栈开发者",
-  "headline": "用优雅的代码解决复杂的问题",
-  "experience": "1 年专业经验",
+  "name": "徐绅",
+  "role": "AI Agent 工程师 / 全栈工程师",
+  "headline": "从 Agent 架构设计到私有化部署，全链路交付可用的 AI 产品",
+  "experience": "4 个 AI 产品从 0→1 交付",
   "email": "zzwr_01@163.com",
   "resumeUrl": "#",
   "social": {
     "github": "https://github.com/Xlikejava",
-    "gitee": "https://gitee.com/Ashen-share"
+    "gitee": "https://gitee.com/Ashen-share",
+    "homepage": "https://xlikejava.github.io/Personal-webpage/"
   }
 }
-
